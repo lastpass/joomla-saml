@@ -5,6 +5,9 @@
  * $Id$
  */
 
+$lpsaml_base = JUri::base();
+$lpsaml_base = preg_replace(',administrator/$,', '', $lpsaml_base);
+
 $config = array (
 
 	/**
@@ -22,7 +25,7 @@ $config = array (
 	 * external url, no matter where you come from (direct access or via the
 	 * reverse proxy).
 	 */
-	'baseurlpath'           => JUri::base() . '/plugins/authentication/lpsaml/simplesamlphp/www/',
+	'baseurlpath'           => $lpsaml_base . '/plugins/authentication/lpsaml/simplesamlphp/www/',
 	'certdir'               => 'cert/',
 	'loggingdir'            => 'log/',
 	'datadir'               => 'data/',
