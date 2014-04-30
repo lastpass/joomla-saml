@@ -29,13 +29,12 @@ do not get locked out from your production servers.
 
 3. Configure the IdP on the identity provider side.  This depends on the
    provider.  For LastPass, visit
-   https://lastpass.com/enterprise_saml.php?service=generic and add a new
+   https://lastpass.com/enterprise_saml.php?service=joomla and add a new
    configuration as follows:
 
   - Select the appropriate user groups to have access to the site
   - Set Entity ID to LastPass:Joomla:https://yoursite.com/path/to/joomla/
-  - Set Assertion Consumer Service to
-    https://yoursite.com/path/to/joomla/plugins/authentication/lpsaml/simplesamlphp/www/module.php/saml/sp/saml2-acs.php/default-sp
+  - Set Launch URL to https://yoursite.com/path/to/joomla/
   - Click 'Update'
   - (Optional) use the SAML Usermap link to map your LastPass logins to
     existing Joomla accounts.  For users without Joomla accounts, they will be
@@ -46,7 +45,8 @@ do not get locked out from your production servers.
 
   - SP Entity ID is LastPass:Joomla:https://yoursite.com/path/to/joomla/
   - SP Assertion Consumer Service is https://yoursite.com/path/to/joomla/plugins/authentication/lpsaml/simplesamlphp/www/module.php/saml/sp/saml2-acs.php/default-sp
-  - You must edit joomla/plugins/authentication/lpsaml/simplesamlphp/config/authsources.php
+  - You must edit
+    joomla/plugins/authentication/lpsaml/simplesamlphp/config/authsources.php
     and change idp to set the IdP entity ID appropriately.
 
 4. Now, go back to a Joomla login prompt (administrator or site login) and
