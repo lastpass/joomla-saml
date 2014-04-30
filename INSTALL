@@ -8,12 +8,12 @@ do not get locked out from your production servers.
    console, click Install, and upload the zip file containing the plugin.
 
    Note, for some installations, you may need to edit the php.ini to
-   increase the upload_max_filesize to 6M in order to accomodate the size
+   increase the upload_max_filesize in order to accomodate the size
    of this plugin.  Alternately, you may install from a local directory
    or URL.
 
-2. Click Extensions -> Plugin Manager, then click 'plg_authentication_lpsaml'
-   to configure the plugin.
+2. Click Extensions -> Plugin Manager, then click
+   'Authentication - LastPass SAML' to configure the plugin.
 
  - Set IdP Entity-Id to match the entity ID used by your identity provider
  - Set SAML Login URL to match the SSO Login endpoint of your identity provider
