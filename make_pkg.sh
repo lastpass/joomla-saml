@@ -13,7 +13,9 @@ filelist=$(cat /tmp/filelist.txt)
 cat lpsaml.xml.tmpl | sed -e "/PLUGIN_FILES/{
   s/PLUGIN_FILES//g
   r /tmp/filelist.txt
-}" > lpsaml.xml
+}
+s/VERSION/$version/g
+" > lpsaml.xml
 
 rm $fn
 zip -r $fn .
