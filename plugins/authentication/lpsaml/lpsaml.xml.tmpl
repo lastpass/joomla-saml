@@ -8,43 +8,46 @@
 	<authorEmail>support@lastpass.com</authorEmail>
 	<authorUrl>https://lastpass.com</authorUrl>
 	<version>VERSION</version>
-	<description>Authentication - LastPass SAML</description>
+	<description>PLG_AUTH_LPSAML_XML_DESCRIPTION</description>
 	<files>
 PLUGIN_FILES
 	</files>
-	<languages />
+	<languages>
+		<language tag="en-GB">en-GB.plg_authentication_lpsaml.ini</language>
+		<language tag="en-GB">en-GB.plg_authentication_lpsaml.sys.ini</language>
+	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<field name="idp_entity_id"
 					type="text"
 					default="https://lastpass.com/saml/idp"
-					description="Entity ID of your Identity Provider (IdP)"
-					label="IdP Entity-Id"
+					description="PLG_AUTH_LPSAML_IDP_ENTITY_ID_DESC"
+					label="PLG_AUTH_LPSAML_IDP_ENTITY_ID_LABEL"
 					size="20"
 					/>
 
 				<field name="idp_login"
 					type="text"
 					default=""
-					description="SSO Login URL from your Identity Provider (IdP)"
-					label="SAML Login URL"
+					description="PLG_AUTH_LPSAML_IDP_LOGIN_DESC"
+					label="PLG_AUTH_LPSAML_IDP_LOGIN_LABEL"
 					size="20"
 					/>
 
 				<field name="idp_logout"
 					type="text"
 					default=""
-					description="SSO Logout URL from your Identity Provider (IdP)"
-					label="SAML Logout URL"
+					description="PLG_AUTH_LPSAML_IDP_LOGOUT_DESC"
+					label="PLG_AUTH_LPSAML_IDP_LOGOUT_LABEL"
 					size="20"
 					/>
 
 				<field name="idp_cert"
 					type="textarea"
 					default=""
-					description="IdP Public Key X.509 Certificate"
-					label="Public Key X.509 Certificate"
+					description="PLG_AUTH_LPSAML_IDP_CERT_DESC"
+					label="PLG_AUTH_LPSAML_IDP_CERT_LABEL"
 					cols="80"
 					rows="10"
 					/>
