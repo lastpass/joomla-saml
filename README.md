@@ -4,7 +4,7 @@ LastPass Joomla SAML Plugin
 The LastPass Joomla SAML Plugin enables SAML 2.0 single-sign-on
 to Joomla! by acting as a SAML Service Provider.  It is based on
 the SimpleSAMLphp library.  The plugin is released under the
-LGPL; please see LICENSE.txt for details.
+GPL; please see LICENSE.txt for details.
 
 What do I need to use it?
 -------------------------
