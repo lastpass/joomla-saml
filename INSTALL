@@ -1,0 +1,55 @@
+This plugin adds SAML 2.0 login support to Joomla! 3.2.  It is based on
+the simplesamlphp library.
+
+Please use a test instance until comfortable with the process, to ensure you
+do not get locked out from your production servers.
+
+1. Go to Extensions -> Extension Manager in the Joomla administrator
+   console, click Install, and upload the zip file containing the plugin.
+
+   Note, for some installations, you may need to edit the php.ini to
+   increase the upload_max_filesize to 6M in order to accomodate the size
+   of this plugin.  Alternately, you may install from a local directory
+   or URL.
+
+2. Click Extensions -> Plugin Manager, then click 'plg_authentication_lpsaml'
+   to configure the plugin.
+
+ - Set IdP Entity-Id to match the entity ID used by your identity provider
+ - Set SAML Login URL to match the SSO Login endpoint of your identity provider
+ - Set SAML Logout URL to match the SSO Logout endpoint of your identity
+   provider
+ - Set Public Key X.509 Certificate to match the certificate from your identity
+   provider
+ - Adjust Ordering on the right-hand side as desired.  It is advisable to set
+   it after "Authentication - Joomla" so that existing Joomla logins (e.g. for
+   admin) will continue to work.
+ - Set the plugin to Enabled
+ - Save these settings
+
+3. Configure the IdP on the identity provider side.  This depends on the
+   provider.  For LastPass, visit
+   https://lastpass.com/enterprise_saml.php?service=generic and add a new
+   configuration as follows:
+
+  - Select the appropriate user groups to have access to the site
+  - Set Entity ID to LastPass:Joomla:https://yoursite.com/path/to/joomla/
+  - Set Assertion Consumer Service to
+    https://yoursite.com/path/to/joomla/plugins/authentication/lpsaml/simplesamlphp/www/module.php/saml/sp/saml2-acs.php/default-sp
+  - Click 'Update'
+  - (Optional) use the SAML Usermap link to map your LastPass logins to
+    existing Joomla accounts.  For users without Joomla accounts, they will be
+    automatically created if you have that option enabled in Joomla
+    (Plugin Manager -> User - Joomla! -> Auto-create Users, on by default).
+
+  For other identity providers:
+
+  - SP Entity ID is LastPass:Joomla:https://yoursite.com/path/to/joomla/
+  - SP Assertion Consumer Service is https://yoursite.com/path/to/joomla/plugins/authentication/lpsaml/simplesamlphp/www/module.php/saml/sp/saml2-acs.php/default-sp
+  - You must edit joomla/plugins/authentication/lpsaml/simplesamlphp/config/authsources.php
+    and change idp to set the IdP entity ID appropriately.
+
+4. Now, go back to a Joomla login prompt (administrator or site login) and
+   click the login button with any username/password.  You should be redirected
+   to the IdP, and then back to Joomla as that user, once authenticated.
+

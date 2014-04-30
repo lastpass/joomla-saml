@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="authentication">
+	<name>plg_authentication_lpsaml</name>
+	<author>LastPass</author>
+	<creationDate>April 2014</creationDate>
+	<copyright>Copyright (C) 2014 LastPass</copyright>
+	<license>GNU Lesser General Public License version 2.1 or later; see LICENSE.txt</license>
+	<authorEmail>support@lastpass.com</authorEmail>
+	<authorUrl>https://lastpass.com</authorUrl>
+	<version>0.0.2</version>
+	<description>Authentication - LastPass SAML</description>
+	<files>
+PLUGIN_FILES
+	</files>
+	<languages />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="idp_entity_id"
+					type="text"
+					default="https://lastpass.com/saml/idp"
+					description="Entity ID of your Identity Provider (IdP)"
+					label="IdP Entity-Id"
+					size="20"
+					/>
+
+				<field name="idp_login"
+					type="text"
+					default=""
+					description="SSO Login URL from your Identity Provider (IdP)"
+					label="SAML Login URL"
+					size="20"
+					/>
+
+				<field name="idp_logout"
+					type="text"
+					default=""
+					description="SSO Logout URL from your Identity Provider (IdP)"
+					label="SAML Logout URL"
+					size="20"
+					/>
+
+				<field name="idp_cert"
+					type="textarea"
+					default=""
+					description="IdP Public Key X.509 Certificate"
+					label="Public Key X.509 Certificate"
+					cols="80"
+					rows="10"
+					/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

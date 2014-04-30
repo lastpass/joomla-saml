@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/!svn/ver/44/trunk/tests
+END
+getcipherdata.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/39/trunk/tests/getcipherdata.phpt
+END
+sign-empty-uri.res
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/13/trunk/tests/sign-empty-uri.res
+END
+generatesessionkey-basics.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/38/trunk/tests/generatesessionkey-basics.phpt
+END
+sign-basic-test.res
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/7/trunk/tests/sign-basic-test.res
+END
+withcomment-id-uri.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/30/trunk/tests/withcomment-id-uri.xml
+END
+xmlsec-decrypt-content.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/14/trunk/tests/xmlsec-decrypt-content.phpt
+END
+oaep_sha1-res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/7/trunk/tests/oaep_sha1-res.xml
+END
+withcomment-empty-uri.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/30/trunk/tests/withcomment-empty-uri.xml
+END
+xmlsec-encrypt.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/9/trunk/tests/xmlsec-encrypt.phpt
+END
+getsymmetrickeysize.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/36/trunk/tests/getsymmetrickeysize.phpt
+END
+sign-basic-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/7/trunk/tests/sign-basic-test.xml
+END
+retrievalmethod-findkey.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/35/trunk/tests/retrievalmethod-findkey.phpt
+END
+sign-c14-comments.res
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/40/trunk/tests/sign-c14-comments.res
+END
+xmlsec-verify-rsa-sha256.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/29/trunk/tests/xmlsec-verify-rsa-sha256.phpt
+END
+sign-sha256-rsa-sha256-test.res
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/15/trunk/tests/sign-sha256-rsa-sha256-test.res
+END
+thumbprint.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/23/trunk/tests/thumbprint.phpt
+END
+xml-sign-sha256-rsa-sha256.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/29/trunk/tests/xml-sign-sha256-rsa-sha256.phpt
+END
+xmlsec-verify.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/7/trunk/tests/xmlsec-verify.phpt
+END
+xml-sign.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/7/trunk/tests/xml-sign.phpt
+END
+privkey.pem
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/7/trunk/tests/privkey.pem
+END
+xmlsec-decrypt.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/7/trunk/tests/xmlsec-decrypt.phpt
+END
+sign-c14-comments.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/40/trunk/tests/sign-c14-comments.phpt
+END
+basic-doc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/7/trunk/tests/basic-doc.xml
+END
+mycert.pem
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/7/trunk/tests/mycert.pem
+END
+retrievalmethod-findkey.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/35/trunk/tests/retrievalmethod-findkey.xml
+END
+generatesessionkey-parity.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/38/trunk/tests/generatesessionkey-parity.phpt
+END
+encrypteddata-node-order.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/32/trunk/tests/encrypteddata-node-order.phpt
+END
+xmlsec-encrypt-noreplace.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/44/trunk/tests/xmlsec-encrypt-noreplace.phpt
+END
+oaep_sha1-content-res.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/14/trunk/tests/oaep_sha1-content-res.xml
+END
+withcomment-id-uri.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/30/trunk/tests/withcomment-id-uri.phpt
+END
+xmlsec-encrypt-content.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/14/trunk/tests/xmlsec-encrypt-content.phpt
+END
+withcomment-empty-uri.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/30/trunk/tests/withcomment-empty-uri.phpt
+END
+sign-empty-uri.phpt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/28/trunk/tests/sign-empty-uri.phpt
+END
