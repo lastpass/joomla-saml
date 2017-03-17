@@ -19,7 +19,10 @@ cat lpsaml.xml.tmpl | sed -e "/PLUGIN_FILES/{
 s/VERSION/$version/g
 " > lpsaml.xml
 
-rm $fn
+if [ -f $fn ];
+then
+  rm $fn
+fi
 zip -r $fn .
 mv $fn ../../..
 
