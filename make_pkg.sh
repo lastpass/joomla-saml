@@ -4,10 +4,12 @@ version=$(git describe | sed -e "s/v//")
 fn=lastpass-joomla-saml-$version.zip
 
 cd plugins/authentication/lpsaml
-(echo "		<filename plugin=\"lpsaml\">lpsaml.php</filename>" ; \
- echo "		<filename>lpsaml.xml</filename>" ; \
- find . -type f ! -name lpsaml.php ! -name lpsaml.xml\* -printf "\t\t<filename>%h/%f</filename>\n") | \
-    sed -e "s/\.\///g" > /tmp/filelist.txt
+(
+  echo "		<filename plugin=\"lpsaml\">lpsaml.php</filename>" ; \
+  echo "		<filename>lpsaml.xml</filename>" ; \
+  find . -type f ! -name lpsaml.php ! -name lpsaml.xml\* -print |
+  sed -E -e "s/\.\/(.*)/		<filename>\1<\/filename>/g"
+) > /tmp/filelist.txt
 
 filelist=$(cat /tmp/filelist.txt)
 cat lpsaml.xml.tmpl | sed -e "/PLUGIN_FILES/{
@@ -17,7 +19,10 @@ cat lpsaml.xml.tmpl | sed -e "/PLUGIN_FILES/{
 s/VERSION/$version/g
 " > lpsaml.xml
 
-rm $fn
+if [ -f $fn ];
+then
+  rm $fn
+fi
 zip -r $fn .
 mv $fn ../../..
 
